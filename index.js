@@ -5,7 +5,7 @@
  * @link https://github.com/Ryuu43/ScarletRed
  */
 
-let eConsole = "%c ElainaV3 "
+let eConsole = "%c Ryuu "
 let eCss = "color: #ffffff; background-color: #f77fbe"
 
 console.log(eConsole+'%c By %cElaina Da Catto',eCss,"", "color: #e4c2b3")
