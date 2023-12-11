@@ -1,0 +1,524 @@
+/* By Ryuu43 */
+/* Siuuuuuuuu */
+
+/*_________________________________________________Client-border-red___________________________________________________*/
+#rcp-fe-viewport-root {
+  display: flex;
+  width: 1280px;
+  height: 720px;
+  position: relative;
+  border-right: 2px solid #d13d30 !important;
+  border-left: 2px solid #d13d30 !important;
+  border-bottom: 2px solid #d13d30 !important;
+  border-top: 2px solid #d13d30 !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#rcp-fe-viewport-root > .rcp-fe-viewport-full-screen {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+  box-shadow: inset 0px 0px 30px rgba(209, 61, 48);
+  animation: glow2 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow2 {
+  from {
+    box-shadow: inset 0px 0px 10px rgba(209, 61, 48);
+  }
+  to {
+    box-shadow: inset 0px 0px 35px rgba(209, 61, 48);
+  }
+}
+/*_________________________________End-Client-border-red___________________*/
+@keyframes answerdiv {
+  0% {
+    right: 100px;
+    background-color: transparent;
+    border: 2px solid transparent;
+  }
+
+  100% {
+    right: 221px;
+    background-color: rgb(19, 15, 15);
+    border: 2px solid #8c8263;
+  }
+}
+
+@keyframes answer {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: #cdbe91;
+  }
+}
+
+html {
+  overflow: hidden !important;
+}
+
+/* ----------------------playbutton---------------------------------*/
+
+.league-logo {
+  display: none !important;
+}
+
+.league-client-logo {
+  display: none !important;
+}
+
+.basic-button .play-button-container {
+  background-position: 0 !important;
+}
+
+/*-----------View-advanced-details----------*/
+.postgame-match-history-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.postgame-match-history-button:hover {
+  filter: drop-shadow(1px 1px 15px #d13d30) !important;
+  transition: 0.2s !important;
+}
+.play-button-container {
+  background-image: none !important;
+  cursor: pointer;
+  color: #d13d30;
+  border: 1px solid #d13d30;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #d13d30, 0 0 10px #d13d30 inset;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background: url("play.gif") no-repeat !important;
+  background-size: cover !important;
+}
+
+.play-button-container:hover {
+  filter: drop-shadow(1px 1px 5px #d13d30) !important;
+  transition: 0.2s !important;
+}
+
+.play-button-content {
+  width: calc(100% - 50px) !important;
+}
+
+.play-button-text {
+  color: #fff !important;
+  content: "ㅤPLAY ⚔️" !important;
+  visibility: hidden;
+  z-index: 0 !important;
+}
+
+.play-button-text:after {
+  content: "ㅤPLAY ⚔️";
+  visibility: visible;
+  display: block;
+  position: absolute;
+}
+
+#rcp-fe-viewport-root
+  > .rcp-fe-viewport-overlay
+  > .screen-root[style*="visibility: hidden;"]
+  ~ .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.play-button-component[style*="visibility: hidden;"] ~ .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.play-button-component[style*="visibility: hidden;"] + .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.play-button-component[style*="visibility: hidden;"] .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.screen-root[style*="visibility: hidden;"] .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.screen-root[style*="visibility: hidden;"] ~ .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.screen-root[style*="visibility: hidden;"] + .play-button-text:after {
+  visibility: hidden !important;
+}
+
+.champion-select-main-container:not(:hidden) ~ .play-button-text:after {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.champion-select-main-container:visible .play-button-text:after {
+  display: none !important;
+}
+
+.play-button-container:hover .play-button-text:after {
+  color: #c7c7c7 !important;
+}
+
+.play-button-container:active .play-button-text:after {
+  color: #c7c7c7 !important;
+}
+
+/*----------------------End of Play Button----------------------*/
+
+/*---------------Confirm button-------------*/
+.confirm-button-container button.confirm {
+  filter: hue-rotate(-180deg) !important;
+}
+/*---------------End Confirm button-------------*/
+
+/*-------------------Find match button---------------*/
+.find-match-button-container {
+  filter: hue-rotate(170deg) !important;
+}
+.tft-find-match-button-container {
+  filter: hue-rotate(170deg) !important;
+}
+/*------------------end find-match-button---------------*/
+
+/*------------------Open-Close-Party------------------------*/
+.open-party-toggle-wrapper .toggle-container .open {
+  filter: hue-rotate(-120deg) !important;
+}
+/*------------------End-Open-Close-Party------------------------*/
+
+/*---------------Lobby-Box---------------*/
+lol-social-panel {
+  filter: hue-rotate(170deg) !important;
+}
+/*---------------End---------------*/
+
+/*----Map-Icon---------------*/
+.lobby-header-map-icon {
+  filter: hue-rotate(170deg) !important;
+}
+.icon-frame {
+  filter: hue-rotate(170deg) !important;
+}
+.parties-game-type-card-name {
+  color: #ff786e !important;
+}
+/*---------------End---------------*/
+
+/*---------------Glowing player name------------------*/
+.player-name__alias {
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  margin-left: 5px;
+
+  color: #ffffff;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 1px #ffffff, 0 0 1px#ffffff, 0 0 1px #d13d30,
+      0 0 1px #d13d30;
+  }
+  to {
+    text-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 4px #d13d30,
+      0 0 4px #d13d30;
+  }
+}
+/*-------------------End--------------*/
+
+/*---------------Challenge-Tokens-----------------------*/
+.challenge-banner-token-container {
+  display: none !important;
+}
+/*-------------------End-Challenge-Tokens---------------*/
+
+/*----------------list friend name panel---------------*/
+.group-header {
+  text-align: center;
+  color: #ff786e !important;
+  text-shadow: 0 0 1px #d13d30, 0 0 5px#d13d30, 0 0 5px #d13d30,
+    0 0 10px #d13d30;
+}
+/*-------------------end list friends-------------------*/
+
+/*loading bar*/
+.lol-loading-screen-container.lol-loading-screen-default-state
+  .lol-loading-screen-progress-bar-container {
+  width: 1000px;
+}
+
+.lol-loading-screen-container.lol-loading-screen-default-state
+  .lol-loading-screen-progress-bar-progress {
+  background-image: linear-gradient(
+    to right,
+    rgb(252, 111, 111) 10%,
+    rgb(244, 51, 86) 70%,
+    #e10202 125%
+  );
+}
+
+.lol-loading-screen-container.lol-loading-screen-default-state,
+.match-details-root {
+  background-image: var(--background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lol-loading-screen-container.lol-loading-screen-default-state
+  .lol-loading-screen-spinner {
+  display: none;
+}
+
+.lol-loading-screen-status-text {
+  text-indent: -9999px;
+}
+
+.lol-loading-screen-status-text::after {
+  content: "Loading...";
+  display: block;
+  text-indent: 0;
+}
+/*end*/
+
+/*--text ....--*/
+.rcp-fe-lol-collections-collection-details {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+
+.collection-tier-information {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+
+.collection-tier-information {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+
+.collection-bottom-info {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+
+lol-uikit-navigation-item {
+  filter: hue-rotate(-50deg) saturate(900%) !important;
+}
+
+.right-nav-menu {
+  color: #ff786e !important;
+}
+.parties-game-type-card-break {
+  color: #ff786e !important;
+}
+.parties-game-type-card-intro {
+  color: #ff786e !important;
+}
+.parties-game-type-card-categories {
+  filter: hue-rotate(320deg) !important;
+}
+/*---------end-------------*/
+
+.menu-item-icon-wrapper {
+  color: #ff786e !important;
+}
+.summoner-level-ring {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.summoner-level {
+  filter: hue-rotate(-40deg);
+}
+.tft-store-button-label {
+  color: #e6b4a5 !important;
+}
+.tft-star-shards-amount {
+  color: #e6b4a5 !important;
+}
+.quick-play-game-mode-text {
+  color: #d13d30 !important;
+}
+.quick-play-button-container {
+  filter: hue-rotate(160deg) !important;
+}
+
+.activity-section {
+  filter: hue-rotate(-50deg) saturate(250%) !important;
+}
+.action-bar-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.chat-toggle-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.mission-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.bug-report-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+lol-parties-comm-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.tft-close-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.team-planner-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.lobby-header-detail {
+  color: #e6b4a5 !important;
+}
+lol-uikit-flat-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+
+.point-eligibility-icon {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.lobby-back-button-container {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.custom-game-tournament-code-container {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+
+.player-notifications-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.close-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.invite-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.auto-accept-button-text {
+  color: #d13d30 !important;
+}
+.close {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+/* lol-uikit-flyout-frame {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+} */
+.game-in-progress-container {
+  color: #ff786e;
+  animation: glowing 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowing {
+  from {
+    text-shadow: 0 0 1px #d13d30, 0 0 5px #d13d30, 0 0 5px #d13d30,
+      0 0 10px #d13d30;
+  }
+  to {
+    text-shadow: 0 0 2px #d13d30, 0 0 10px #d13d30, 0 0 20px #d13d30,
+      0 0 30px #d13d30;
+  }
+}
+
+.postgame-header {
+  color: #ff786e;
+  animation: glowing 1.5s ease-in-out infinite alternate;
+}
+.prestige-progression-xp-gained {
+  color: #ff786e !important;
+}
+.prestige-progression-level-label {
+  color: #ff786e !important;
+}
+.mastery-progression-grade {
+  color: #ff786e !important;
+  animation: glowing 1.5s ease-in-out infinite alternate;
+}
+.mastery-experience-gained {
+  color: #ff786e !important;
+}
+.mastery-experience-meta-info {
+  color: #ff786e !important;
+}
+.postgame-game-result-icon {
+  filter: hue-rotate(170deg) !important;
+}
+.match-layer-header-right {
+  color: #ff786e;
+  animation: glowing 1.5s ease-in-out infinite alternate;
+}
+.match-layer-header-icon {
+  filter: hue-rotate(170deg) !important;
+}
+.replay-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.webm-bottom-buttons-container {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+#pause-bg {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+
+/*-----Remove-Eleina-eastereggs-----*/
+#EasterEgg1Div {
+  display: none !important;
+}
+/*-------Sorry-bro-:<-------------*/
+
+lol-uikit-framed-dropdown {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.challenges-identity-customizer-title {
+  color: #ff786e !important;
+}
+.identity-customizer-icon-header {
+  color: #e6b4a5 !important;
+}
+.social-count-badge {
+  border-radius: 4px;
+  animation: glowingbadge 1s ease-in-out infinite alternate;
+}
+@keyframes glowingbadge {
+  0% {
+    box-shadow: 0px 0px 1.5px 0px #d8d800;
+  }
+  50% {
+    box-shadow: 0px 0px 0px 0px #d8d800;
+  }
+  from {
+    text-shadow: 0 0 1px #d8d800, 0 0 5px #d8d800, 0 0 5px #d8d800,
+      0 0 10px #d8d800;
+  }
+  to {
+    text-shadow: 0 0 2px #d8d800, 0 0 10px #d8d800, 0 0 20px #d8d800,
+      0 0 30px #d8d800;
+  }
+}
+.open-party-indicator {
+  filter: hue-rotate(-120deg) saturate(300%) !important;
+}
+.notifications-button {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.alpha-tag {
+  color: #ff786e;
+  animation: glowing 1.5s ease-in-out infinite alternate;
+}
+lol-uikit-radio-input-option {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.postgame-ranked-progression-container {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
+.tft-player-left-column {
+  color: #ff786e;
+}
+
+.middle.filled.xp-ring {
+  background-color: #ff786e !important;
+}
+.clipboard-copy-icon {
+  filter: hue-rotate(-40deg) saturate(300%) !important;
+}
