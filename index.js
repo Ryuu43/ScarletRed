@@ -1,9 +1,8 @@
 /**
- * @name ElainaV3
- * @author Elaina Da Catto
- * @description Elaina theme 3rd Generation for Pengu Loader
- * @link https://github.com/Elaina69
- * @Nyan Meow~~~
+ * @name ScarletRed
+ * @author Ryuu
+ * @description ScarletRed theme base on EleinaV3 theme for Pengu Loader
+ * @link https://github.com/Ryuu43/ScarletRed
  */
 
 let eConsole = "%c ElainaV3 "
