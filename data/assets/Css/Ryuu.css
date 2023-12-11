@@ -522,3 +522,6 @@ lol-uikit-radio-input-option {
 .clipboard-copy-icon {
   filter: hue-rotate(-40deg) saturate(300%) !important;
 }
+.rcp-fe-viewport-sidebar {
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) !important;
+}

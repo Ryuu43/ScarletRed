@@ -307,9 +307,6 @@ lol-social-roster-member .offline .member-name {
 	background: #09a646 !important;
 }
 
-.filled.xp-ring {
-	background: linear-gradient(rgb(255 236 236), rgb(87 103 105 / 48%)) !important;
-}
 
 .parties-background {
 	background: linear-gradient(to bottom, rgb(255 255 255 / 26%) 0%, rgba(0,0,0,0) 50%, rgb(90 27 62 / 20%) 100%) !important;
