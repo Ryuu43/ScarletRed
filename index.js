@@ -1,6 +1,7 @@
 /**
  * @name ScarletRed
- * @author Ryuu
+ * @author Elaina
+ * @Modifier Ryuu
  * @description ScarletRed theme base on EleinaV3 theme for Pengu Loader
  * @link https://github.com/Ryuu43/ScarletRed
  */
