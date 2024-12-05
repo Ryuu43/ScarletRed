@@ -1,3 +1,6 @@
+<h1>No more updates because I no longer play league</h1>
+
+
 Actually, it is based on the theme of ElainaV3, I just changed it a little to suit my preferences
 
 ElainaV3: https://github.com/Elaina69/Elaina-V3
